@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do List Minimalis</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>To-Do List - Nelsen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    
+
     <!-- Kolom Todo -->
-    <fieldset class="wrapper">
-      <legend>📌 Daftar Tugas – Nelsen</legend>
-      
+    <fieldset>
+      <legend>📌 Daftar Tugas - Nelsen</legend>
       <form id="form">
         <input type="text" id="task" placeholder="Tulis kegiatan...">
         <input type="date" id="date">
@@ -20,7 +19,6 @@
       </form>
 
       <div class="filter">
-        <label for="filter">Filter:</label>
         <select id="filter">
           <option value="all">Semua</option>
           <option value="done">Selesai</option>
@@ -32,13 +30,12 @@
     </fieldset>
 
     <!-- Kolom Catatan -->
-    <fieldset class="notes">
-      <legend>📋 Catatan Kegiatan – Nelsen</legend>
+    <fieldset>
+      <legend>📋 Catatan - Nelsen</legend>
       <textarea id="notesArea" readonly></textarea>
     </fieldset>
 
   </div>
-
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
