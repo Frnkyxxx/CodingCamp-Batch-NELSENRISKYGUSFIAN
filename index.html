@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Minimalis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Kolom Todo -->
+    <fieldset class="wrapper">
+      <legend>📌 Daftar Tugas – Nelsen</legend>
+      
+      <form id="form">
+        <input type="text" id="task" placeholder="Tulis kegiatan...">
+        <input type="date" id="date">
+        <button type="submit">Tambah</button>
+      </form>
+
+      <div class="filter">
+        <label for="filter">Filter:</label>
+        <select id="filter">
+          <option value="all">Semua</option>
+          <option value="done">Selesai</option>
+          <option value="undone">Belum</option>
+        </select>
+      </div>
+
+      <ul id="list"></ul>
+    </fieldset>
+
+    <!-- Kolom Catatan -->
+    <fieldset class="notes">
+      <legend>📋 Catatan Kegiatan – Nelsen</legend>
+      <textarea id="notesArea" readonly></textarea>
+    </fieldset>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
